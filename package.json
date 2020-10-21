@@ -9,7 +9,12 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "jquery": "^3.5.1",
+    "vue": "^2.6.12",
+    "vue-check-view": "^0.3.0",
+    "vue-number-animation": "^1.0.5",
+    "vue-owl-carousel": "^2.0.3",
+    "vue-typed-js": "^0.1.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
