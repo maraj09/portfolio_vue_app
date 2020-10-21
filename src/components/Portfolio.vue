@@ -65,7 +65,7 @@
                         </figure>
                     </div>
                     <div class="col-xl-12">
-                        <div class="btn-center"><a href="#" class="big button">Discover More</a></div>
+                        <div class="btn-center" id="skill"><a href="#" class="big button">Discover More</a></div>
                     </div>
                 </div>
             </div>

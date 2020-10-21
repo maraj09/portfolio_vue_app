@@ -28,49 +28,49 @@
                             </div>
                             <ul class="nav__list " :class="{ 'nav__list--active': isClicked }">
                                 <li title="Home" class="nav__item">
-                                    <a href="#1" :class="{ nav__link__active: isHome }" class="nav__link c-blue">
+                                    <a href="#header" :class="{ nav__link__active: isHome }" class="nav__link c-blue">
                                         <!-- Add class for see which  page  is open -->
                                         <img src="images/menu_img/home-icon.png" alt />
                                         <span class="tooltiptext">Home</span>
                                     </a>
                                 </li>
                                 <li title="About" class="nav__item">
-                                    <a href="#2" :class="{ nav__link__active: isAbout }" class="nav__link c-yellow scrolly">
+                                    <a href="#about" :class="{ nav__link__active: isAbout }" class="nav__link c-yellow scrolly">
                                         <!-- Add class for see which  page  is open -->
                                         <img src="images/menu_img/about-icon.png" alt />
                                         <span class="tooltiptext">About</span>
                                     </a>
                                 </li>
-                                <li title="Projects" class="nav__item">
-                                    <a href="#3" :class="{ nav__link__active: isExperience }" class="nav__link c-red">
+                                <li title="Experience" class="nav__item">
+                                    <a href="#awards" :class="{ nav__link__active: isExperience }" class="nav__link c-red">
                                         <!-- Add class for see which  page  is open -->
                                         <img src="images/menu_img/exp.png" alt />
                                         <span class="tooltiptext">Experience</span>
                                     </a>
                                 </li>
-                                <li title="Contact" class="nav__item">
-                                    <a href="#4" :class="{ nav__link__active: isProject }" class="nav__link c-green">
+                                <li title="Projects" class="nav__item">
+                                    <a href="#portfolio" :class="{ nav__link__active: isProject }" class="nav__link c-green">
                                         <!-- Add class for see which  page  is open -->
                                         <img src="images/menu_img/projects-icon.png" alt />
                                         <span class="tooltiptext">Projects</span>
                                     </a>
                                 </li>
-                                <li title="Contact" class="nav__item">
-                                    <a href="#4" :class="{ nav__link__active: isSkill }" class="nav__link c-green">
+                                <li title="Skills" class="nav__item">
+                                    <a href="#skill" :class="{ nav__link__active: isSkill }" class="nav__link c-green">
                                         <!-- Add class for see which  page  is open -->
                                         <img src="images/menu_img/skill.png" alt />
                                         <span class="tooltiptext">Skills</span>
                                     </a>
                                 </li>
-                                <li title="Contact" class="nav__item">
-                                    <a href="#4" :class="{ nav__link__active: isTestimonial }" class="nav__link c-green">
+                                <li title="Testimonial" class="nav__item">
+                                    <a href="#testimonial" :class="{ nav__link__active: isTestimonial }" class="nav__link c-green">
                                         <!-- Add class for see which  page  is open -->
                                         <img src="images/menu_img/testi.png" alt />
                                         <span class="tooltiptext">Testimonial</span>
                                     </a>
                                 </li>
                                 <li title="Contact" class="nav__item">
-                                    <a href="#4" :class="{ nav__link__active: isContact }" class="nav__link c-green">
+                                    <a href="#contact" :class="{ nav__link__active: isContact }" class="nav__link c-green">
                                         <!-- Add class for see which  page  is open -->
                                         <img src="images/menu_img/contact-icon.png" alt />
                                         <span class="tooltiptext">Contact</span>
@@ -83,7 +83,7 @@
             </div>
         </section>
         <!-- Navigation area End -->
-        <About/>
+        <About @inAbout="markAbout" />
         <Experience @inExperience="markExperience" />
         <Portfolio @inProject="markProject" />
         <Skills @inSkill="markSkill"/>

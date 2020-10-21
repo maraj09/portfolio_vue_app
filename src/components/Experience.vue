@@ -1,6 +1,6 @@
 <template>
     <div>
-        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards" >
+        <section  class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards" >
             <div class="container pt-5">
                 <div class="row my-auto">
                     <div class="col-12">

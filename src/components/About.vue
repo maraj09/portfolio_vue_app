@@ -1,12 +1,12 @@
 <template>
     <div>
-        <section id="about" class="about-area">
+        <section id="about" class="about-area" >
             <div class="container">
                 <div class="row">
                     <div class="col-12 about-content-header">
                         <h3>About Me</h3>
                     </div>
-                    <div class="col-md-6 about-content-left">
+                    <div class="col-md-6 about-content-left" v-view="inAbout">
                         <div class=" d-flex justify-content-center">
                             <a class="img-link" href="">
                                 <img class="portrait" src="/images/portrait_img/sample_portrait.jpg"   alt="" />
@@ -32,7 +32,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+    methods: {
+        inAbout() {
+            this.$emit("inAbout");
+        },
+    }
+};
 </script>
 
 <style lang="scss" scoped></style>

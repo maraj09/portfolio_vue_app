@@ -3,12 +3,12 @@
         <section id="testimonial" class="testimonial-area" >
             <div class="container">
                 <h2 class="block_title">Testimonials</h2>
-                <div class="row" v-view="inTesti">
+                <div class="row" >
                     <div class="col-xl-12"></div>
                     <carousel :items=1 :nav='false' id="testimonial-container" class="col-xl-12">
                         <div class="testimonila-block ">
-                            <img src="images/img//testimonial.jpg" alt="clients" class="selfshot" />
-                            <p>
+                            <img  src="images/img//testimonial.jpg" alt="clients" class="selfshot" />
+                            <p v-view="inTesti">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem sed mollitia illum! Molestiae dignissimos, hic dolorem et eius ut nobis. Corrupti totam amet aperiam
                                 aut voluptate nobis dolor at soluta.
                             </p>
