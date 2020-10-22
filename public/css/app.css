@@ -115,12 +115,20 @@ a:focus {
 /* ///////////////////////////////////////////////////////////////////// 
 //  02 - Header 
 /////////////////////////////////////////////////////////////////////*/
-
+header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.650);
+}
 header {
-    background: url(/images/bg.jpg?8de5d46ded772bfa2c92d7b4fc58119b) no-repeat;
+    background: url(../images/portrait_img/chalk-4829602_1920.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: 50%;
+    background-position: 50% 20%;
     height: 100vh;
 }
 
@@ -136,7 +144,7 @@ header {
 }
 .bigheadline {
     font-family: "Raleway", sans-serif;
-    font-weight: 100;
+    font-weight: 200;
     font-size: 6em;
     margin: 0 auto;
     text-align: center;
@@ -185,7 +193,8 @@ header {
 /////////////////////////////////////////////////////////////////////*/
 
 #navigation {
-    background: rgb(0, 0, 0);
+    background: rgb(0, 0, 0); 
+    height: 67px;
 }
 
 .nav-wrap {
@@ -193,17 +202,16 @@ header {
     top: 0;
     width: 100%;
     z-index: 9999;
-    background: rgba(0, 0, 0, 0.856) !important;
 
 }
 
 .logo {
-    height: 76px;
+    height: 67px;
+    margin-top: -3px;
 }
 
 .logo-text {
     font-size: 3em;
-    padding: 0.2em 0;
     color: #fff;
     font-family: "Raleway", sans-serif;
     font-weight: 100;
@@ -215,8 +223,9 @@ header {
     }
 
     .logo {
-        padding-top: 15px;
-        margin-left: -10px;
+        padding-top: 10px;
+        margin-top: 0px;
+
     }
 }
 
@@ -228,8 +237,11 @@ header {
     letter-spacing: 5px;
     font-size: 20px;
     font-weight: 100;
+    
 }
-
+.mid-nav{
+    margin-top:17px;
+}
 .resu a {
     color: white;
     letter-spacing: 2px;
@@ -257,7 +269,9 @@ header {
     }
 
     .mid-nav {
-        margin-left: -18%;
+        margin-left: -40%;
+    margin-top:23px;
+
     }
 }
 
@@ -265,7 +279,7 @@ header {
 ---------------------------------------------*/
 
 .burger {
-    padding: 20px 40px;
+    padding: 20px 0px;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -274,7 +288,8 @@ header {
     cursor: pointer;
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     right: 0;
-    margin-top: 20px;
+    margin-top: 12px;
+    margin-right: 40px;
 }
 
 .burger:hover .burger__patty,
@@ -286,14 +301,14 @@ header {
 .burger__patty {
     position: relative;
     height: 2px;
-    width: 40px;
+    width: 45px;
     background: white;
 }
 
 .burger__patty:before {
     content: "";
     position: absolute;
-    top: -10px;
+    top: -12px;
     left: 0;
     height: 2px;
     width: 100%;
@@ -303,7 +318,7 @@ header {
 .burger__patty:after {
     content: "";
     position: absolute;
-    top: 10px;
+    top: 12px;
     left: 0;
     height: 2px;
     width: 100%;
@@ -322,11 +337,11 @@ header {
 }
 
 .burger--active .burger__patty:before {
-    transform: rotate(45deg) translate(7px, -7px) scaleX(0.7);
+    transform: rotate(45deg) translate(10px, -8px) scaleX(0.7);
 }
 
 .burger--active .burger__patty:after {
-    transform: rotate(-45deg) translate(7px, 7px) scaleX(0.7);
+    transform: rotate(-45deg) translate(10px, 8px) scaleX(0.7);
 }
 
 .nav__list {
@@ -430,11 +445,29 @@ header {
         width: 150%;
     }
 
-    .burger {
-        padding: 20px 30px;
-    }
     .nav__link:hover img{
         margin-top: 3.5vh !important;
+    }
+    .burger{
+        margin-right: 30px;
+    }
+    .burger__patty {
+        width: 40px;
+    }
+    
+    .burger__patty:before {
+        top: -10px;
+    }
+    
+    .burger__patty:after {
+        top: 10px;
+    }
+    .burger--active .burger__patty:before {
+        transform: rotate(45deg) translate(9px, -8px) scaleX(0.7);
+    }
+    
+    .burger--active .burger__patty:after {
+        transform: rotate(-45deg) translate(9px, 8px) scaleX(0.7);
     }
 }
 
@@ -460,19 +493,34 @@ header {
         left: -50px;
         width: 150%;
     }
-
-    .burger {
-        padding: 20px 30px;
-    }
     .nav__link:hover img{
         margin-top: 3.5vh !important;
+    }
+    .burger{
+        margin-right: 30px;
+    }
+    
+    .burger__patty {
+        width: 40px;
+    }
+    
+    .burger__patty:before {
+        top: -10px;
+    }
+    
+    .burger__patty:after {
+        top: 10px;
+    }
+    .burger--active .burger__patty:before {
+        transform: rotate(45deg) translate(9px, -8px) scaleX(0.7);
+    }
+    
+    .burger--active .burger__patty:after {
+        transform: rotate(-45deg) translate(9px, 8px) scaleX(0.7);
     }
 }
 
 @media (max-width: 390px) {
-    .burger {
-        padding: 20px 25px;
-    }
 
     .side_nav {
         padding-left: 10px;
@@ -1197,14 +1245,6 @@ header {
     }
 }
 
-@media all and (max-width: 991px) {
-    header {
-        background: url(/images/bg-small.jpg?733660a3536bf7f8131041e170ca919c) no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: 50% 0px;
-    }
-}
 
 @media all and (max-width: 768px) {
     .services {

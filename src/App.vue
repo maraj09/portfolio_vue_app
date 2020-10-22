@@ -5,13 +5,13 @@
         <section id="navigation" :class="{ 'nav-wrap': isScroll }">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-5 col-sm-6 pt-sm-2 ">
+                    <div class="col-5 col-sm-6 ">
                         <div class="logo text-xl-center  text-left text-sm-left ">
                             <a data-scroll href="#body" class="logo-text">Rashid</a>
                         </div>
                     </div>
                     <div class="col-sm-4 col-5 ">
-                        <div class="mid-nav d-flex justify-content-center justify-content-sm-end mt-4">
+                        <div class="mid-nav d-flex justify-content-center justify-content-sm-end">
                             <div class="cv mr-3 mr-sm-5">
                                 <a href="">C.V</a>
                             </div>
@@ -186,14 +186,10 @@ export default {
 <style scoped>
 .nav__list--active {
     visibility: visible;
-    margin-top: 84px;
+    margin-top: 67px;
 }
 .nav__link__active {
     background: #e43d34;
 }
-@media (max-width: 575px) {
-    .nav__list--active {
-        margin-top: 75px;
-    }
-}
+
 </style>
