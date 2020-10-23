@@ -4,7 +4,7 @@
             <div class="container pt-5">
                 <div class="row my-auto">
                     <div class="col-12">
-                        <h2 class="  text-center">Experience</h2>
+                        <h2 class=" block_title text-center">Experience</h2>
                         <div class="mb-5 heading-border"></div>
                     </div>
                     <div class="main-award" id="award-box">

@@ -189,7 +189,7 @@ export default {
     margin-top: 67px;
 }
 .nav__link__active {
-    background: #e43d34;
+    background: #f14f46;
 }
 
 </style>

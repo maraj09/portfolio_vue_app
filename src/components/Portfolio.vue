@@ -1,10 +1,10 @@
 <template>
     <div>
-        <section id="portfolio" class="portfolio-area" >
+        <section id="portfolio" class="portfolio-area">
             <div class="container">
                 <h2 class="block_title">My Works</h2>
                 <div class="row port cs-style-3">
-                    <div class="col-md-4 col-sm-6 col-xl-4 item-space" v-view="inProject">
+                    <div class="col-12 col-md-6 col-lg-4 item-space" v-view="inProject">
                         <figure>
                             <img src="images/img/portfolio1.jpg" alt="img04" />
                             <figcaption>
@@ -14,7 +14,7 @@
                             </figcaption>
                         </figure>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xl-4 item-space">
+                    <div class="col-12 col-md-6 col-lg-4 item-space">
                         <figure>
                             <img src="images/img/portfolio2.jpg" alt="img01" />
                             <figcaption>
@@ -24,7 +24,7 @@
                             </figcaption>
                         </figure>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xl-4 item-space">
+                    <div class="col-12 col-md-6 col-lg-4 item-space">
                         <figure>
                             <img src="images/img/portfolio3.jpg" alt="img02" />
                             <figcaption>
@@ -34,7 +34,7 @@
                             </figcaption>
                         </figure>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xl-4 item-space">
+                    <div class="col-12 col-md-6 col-lg-4 item-space">
                         <figure>
                             <img src="images/img/portfolio4.jpg" alt="img04" />
                             <figcaption>
@@ -44,7 +44,7 @@
                             </figcaption>
                         </figure>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xl-4 item-space">
+                    <div class="col-12 col-md-6 col-lg-4 item-space">
                         <figure>
                             <img src="images/img/portfolio5.jpg" alt="img01" />
                             <figcaption>
@@ -54,7 +54,7 @@
                             </figcaption>
                         </figure>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xl-4 item-space">
+                    <div class="col-12 col-md-6 col-lg-4 item-space">
                         <figure>
                             <img src="images/img//portfolio6.jpg" alt="img02" />
                             <figcaption>
@@ -65,7 +65,7 @@
                         </figure>
                     </div>
                     <div class="col-xl-12">
-                        <div class="btn-center" id="skill"><a href="#" class="big button">Discover More</a></div>
+                        <div class="btn-center" id="skill"><a href="#skill" class="big button">Discover More</a></div>
                     </div>
                 </div>
             </div>
@@ -74,12 +74,12 @@
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">Our Project</h5>
+                            <h5 class="modal-title" id="exampleModalLongTitle">My Projects</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body my-lg-5">
+                        <div class="modal-body py-lg-5">
                             <div class="container">
                                 <div class="row ">
                                     <div class="col-12 col-lg-7">
@@ -102,7 +102,7 @@
                                                 </div>
                                                 <div class="right_modal_body_date">
                                                     <h3 class="modal_work_name" id="modal_work_name">Settings</h3>
-                                                    <p>Date : May 2020</p>
+                                                    <p class="text-white">Date : May 2020</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -129,11 +129,42 @@ $(document).on("click", ".modal_img", function() {
 });
 export default {
     methods: {
-        inProject(){
-            this.$emit('inProject')
-        }
+        inProject() {
+            this.$emit("inProject");
+        },
     },
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.modal-header {
+    background: rgb(230, 72, 72);
+    color: white;
+    border-bottom: none;
+}
+.close {
+    font-size: 40px;
+    color: white;
+    opacity: 1;
+    margin-top: -18px;
+}
+.modal-title {
+    font-size: 25px;
+    font-weight: 600;
+}
+.modal-body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.750);
+}
+.modal-body {
+    position: relative;
+    background: url(/images/portrait_img/typewriter-5626841_1920.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+</style>
