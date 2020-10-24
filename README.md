@@ -25,5 +25,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### If Intalling Npm Showing error
 ```
-install git in your pc 
+Download & install git in your pc 
 ```
