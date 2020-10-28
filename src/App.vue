@@ -7,13 +7,13 @@
                 <div class="row">
                     <div class="col-5 col-sm-6 ">
                         <div class="logo text-xl-center  text-left text-sm-left ">
-                            <a data-scroll href="#body" class="logo-text">Rashid</a>
+                            <a data-scroll href="#body" class="logo-text">Hamid</a>
                         </div>
                     </div>
                     <div class="col-sm-4 col-5 ">
                         <div class="mid-nav d-flex justify-content-center justify-content-sm-end">
                             <div class="cv mr-3 mr-sm-5">
-                                <a href="">C.V</a>
+                                <a href="">CV</a>
                             </div>
                             <div class="resu">
                                 <a href="">Resume</a>

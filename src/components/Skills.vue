@@ -6,7 +6,7 @@
                 <div class="row text-center my-auto" v-if="show_skill">
                     <div class="col-md-3 col-sm-6">
                         <div class="skill-item">
-                            <i class="fab fa-html5 fa-5x skill_icon text-danger"></i>
+                            <i class="fab fa-html5 fa-5x skill_icon"></i>
                             <h2>
                                 <span >
                                     <number :from="0" :to="95" :duration="5" />
@@ -18,7 +18,7 @@
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="skill-item">
-                            <i class="fab fa-css3 fa-5x skill_icon text-primary"></i>
+                            <i class="fab fa-css3 fa-5x skill_icon"></i>
                             <h2>
                                 <span >
                                     <number :from="0" :to="90" :duration="5" />
@@ -30,7 +30,7 @@
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="skill-item">
-                            <i class="fab fa-bootstrap fa-5x skill_icon " style="  color: rgb(85, 87, 218);"></i>
+                            <i class="fab fa-bootstrap fa-5x skill_icon"></i>
                             <h2>
                                 <span >
                                     <number :from="0" :to="87" :duration="5" />
@@ -42,7 +42,7 @@
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="skill-item">
-                            <i class="fab fa-js fa-5x skill_icon" style=" color: yellow;"></i>
+                            <i class="fab fa-js fa-5x skill_icon"></i>
                             <h2>
                                 <span >
                                     <number :from="0" :to="80" :duration="5" />
@@ -54,7 +54,7 @@
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="skill-item">
-                            <i class="fab fa-php fa-5x skill_icon " style="  color: blue;"></i>
+                            <i class="fa fa-globe fa-5x skill_icon"></i>
                             <h2>
                                 <span >
                                     <number :from="0" :to="85" :duration="5" />
@@ -66,7 +66,7 @@
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="skill-item">
-                            <i class="fab fa-laravel fa-5x skill_icon text-danger"></i>
+                            <i class="fab fa-laravel fa-5x skill_icon"></i>
                             <h2>
                                 <span >
                                     <number :from="0" :to="60" :duration="5" />
@@ -78,7 +78,7 @@
                     </div>
                     <div class="col-md-3 col-sm-6 skill_icon">
                         <div class="skill-item">
-                            <i class="fab fa-vuejs fa-5x text-success"></i>
+                            <i class="fab fa-vuejs fa-5x"></i>
                             <h2>
                                 <span >
                                     <number :from="0" :to="75" :duration="5" />
@@ -90,7 +90,7 @@
                     </div>
                     <div class="col-md-3 col-sm-6 skill_icon">
                         <div class="skill-item">
-                            <i class="fas fa-database fa-5x text-danger"></i>
+                            <i class="fas fa-database fa-5x"></i>
                             <h2>
                                 <span >
                                     <number :from="0" :to="80" :duration="5" />
