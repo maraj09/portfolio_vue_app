@@ -22,8 +22,3 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-
-### If Intalling Npm Showing error
-```
-Download & install git in your pc 
-```
